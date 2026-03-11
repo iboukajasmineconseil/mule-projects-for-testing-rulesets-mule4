@@ -1,0 +1,36 @@
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd  http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+  <http:listener-config name="Listener-config">
+    <http:listener-connection host="0.0.0.0" port="8081"></http:listener-connection>
+  </http:listener-config>
+  <flow name="hello">
+    <http:listener config-ref="Listener-config" doc:id="vxabtk" doc:name="Listener" path="hello"></http:listener>
+    <logger doc:id="zwivrn" doc:name="Logger" message="Hello"></logger>
+  </flow>
+  <flow name="sonar-api-for-testing-console">
+    <http:listener config-ref="Listener-config" doc:id="vxabtk2" doc:name="Listener" path="api/v1"></http:listener>
+    <logger doc:id="zwivrn2" doc:name="Logger" message="sonar-api-for-testing-config"></logger>
+  </flow>
+  <flow name="get:\accounts:bank-db-system-config">
+    <http:listener config-ref="Listener-config" doc:id="vxabtk3" doc:name="Listener" path="api/v1"></http:listener>
+    <logger doc:id="zwivrn3" doc:name="Logger" message="sonar-api-for-testing-config"></logger>
+  </flow>
+  <flow name="delete:\employees\{employeeid}:bank-db-system-config">
+    <http:listener config-ref="Listener-config" doc:id="vxabtk4" doc:name="Listener" path="api/v1"></http:listener>
+    <logger doc:id="zwivrn4" doc:name="Logger" message="sonar-api-for-testing-config"></logger>
+  </flow>
+    <flow name="put:\accounts\cards\{cardglobalid}:application\json:bank-db-system-config">
+    <http:listener config-ref="Listener-config" doc:id="vxabtk5" doc:name="Listener" path="api/v1"></http:listener>
+    <logger doc:id="zwivrn5" doc:name="Logger" message="sonar-api1-for-testing-console"></logger>
+  </flow>
+  <!--flow name="delete:\employees\{employeeId}:bank-db-system-config">
+    <http:listener config-ref="Listener-config" doc:id="vxabtk" doc:name="Listener" path="api/v1"></http:listener>
+    <logger doc:id="zwivrn" doc:name="Logger" message="sonar-api-for-testing-config"></logger>
+  </flow>
+  <flow name="delete:\employees\(employeeid):bank-db-system-config">
+    <http:listener config-ref="Listener-config" doc:id="vxabtk" doc:name="Listener" path="api/v1"></http:listener>
+    <logger doc:id="zwivrn" doc:name="Logger" message="sonar-api-for-testing-config"></logger>
+  </flow-->
+  <sub-flow name="my-sub-flow">
+    <logger doc:name="Logger" doc:id="lmaxol"/>
+  </sub-flow>
+</mule>

@@ -1,0 +1,10 @@
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd  http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+  <http:listener-config name="Listener-config">
+    <http:listener-connection host="${http.host}" port="${http.port}"></http:listener-connection>
+  </http:listener-config>
+  <flow name="get-name">
+    <http:listener config-ref="Listener-config" doc:id="qpddgb" doc:name="Listener" path="hello"></http:listener>
+    <logger doc:name="Logger" doc:id="dwthiq" message="Hello"/>
+  </flow>
+  <configuration-properties doc:name="Configuration properties" file="local.yaml"></configuration-properties>
+</mule>

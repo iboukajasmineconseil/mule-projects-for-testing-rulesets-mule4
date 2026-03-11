@@ -1,0 +1,31 @@
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd  http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+	http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+    <http:listener-config name="Listener-config">
+        <http:listener-connection port="8081" host="0.0.0.0"></http:listener-connection>
+    </http:listener-config>
+    <flow name="name1">
+        <http:listener doc:id="hnyzqv" doc:name="Listener" path="hello" config-ref="Listener-config"></http:listener>
+
+    <ee:transform doc:name="Transform" doc:id="qbnrcw" >
+      <ee:variables>
+        <ee:set-variable variableName="NewVariable1"><![CDATA[%dw 2.0
+output application/java
+---
+{
+  "Dataveave":"Inline var"
+}]]></ee:set-variable>
+      </ee:variables>
+    </ee:transform>
+            <ee:transform doc:name="Transform Payload Inline" doc:id="duivzk" >
+            <ee:message >
+                <ee:set-payload doc:name="Set payload" doc:id="pxbmpk" ><![CDATA[%dw 2.0
+        output application/java
+        ---
+        { 
+          "Dataweave":"inline"
+        }]]></ee:set-payload>
+            </ee:message>
+        </ee:transform>
+    </flow>
+</mule>

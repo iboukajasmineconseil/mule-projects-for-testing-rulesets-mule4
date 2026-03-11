@@ -1,0 +1,11 @@
+http:
+  port: "8081"
+  host: "0.0.0.0"
+
+database:
+  url: "jdbc:mysql://localhost:3306/mydb"
+  username: "![2Fxmi5Z+jYw=]"
+  password: "![dVD8FrDnKVM=]"
+
+secure:
+  key: "![8fibUWFTGjdroLSqiPorTw==]"

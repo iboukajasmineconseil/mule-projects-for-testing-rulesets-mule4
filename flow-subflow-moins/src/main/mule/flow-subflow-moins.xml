@@ -1,0 +1,62 @@
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:file="http://www.mulesoft.org/schema/mule/file" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd  http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd  http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+  <http:listener-config name="Listener-config">
+    <http:listener-connection host="0.0.0.0" port="8081"></http:listener-connection>
+  </http:listener-config>
+  <flow name="hello1">
+    <http:listener config-ref="Listener-config" doc:id="kiflpq" doc:name="Listener" path="/hello"></http:listener>
+    <logger doc:id="dqgiwm" doc:name="Logger" message="${mule.key}"></logger>
+  </flow>
+  <flow name="Hello2">
+    <http:listener config-ref="Listener-config" doc:id="kiflpq" doc:name="Listener" path="/hello"></http:listener>
+    <logger doc:id="dqgiwm" doc:name="Logger" message="Hello"></logger>
+  </flow>
+  <flow name="Hello3">
+    <http:listener config-ref="Listener-config" doc:id="kiflpq" doc:name="Listener" path="/hello"></http:listener>
+    <logger doc:id="dqgiwm" doc:name="Logger" message="Hello"></logger>
+  </flow>
+  <flow name="Hello4">
+    <http:listener config-ref="Listener-config" doc:id="kiflpq" doc:name="Listener" path="/hello"></http:listener>
+    <logger doc:id="dqgiwm" doc:name="Logger" message="Hello"></logger>
+  </flow>
+  <flow name="Hello5">
+    <http:listener config-ref="Listener-config" doc:id="kiflpq" doc:name="Listener" path="/hello"></http:listener>
+    <logger doc:id="dqgiwm" doc:name="Logger" message="Hello"></logger>
+  </flow>
+  <flow name="Hello6">
+    <http:listener config-ref="Listener-config" doc:id="kiflpq" doc:name="Listener" path="/hello"></http:listener>
+    <logger doc:id="dqgiwm" doc:name="Logger" message="Hello"></logger>
+  </flow>
+  <flow name="Hello7">
+    <http:listener config-ref="Listener-config" doc:id="kiflpq" doc:name="Listener" path="/hello"></http:listener>
+    <logger doc:id="dqgiwm" doc:name="Logger" message="Hello"></logger>
+  </flow>
+  <flow name="Hello8">
+    <http:listener config-ref="Listener-config" doc:id="kiflpq" doc:name="Listener" path="/hello"></http:listener>
+    <logger doc:id="dqgiwm" doc:name="Logger" message="Hello"></logger>
+  </flow>
+  <flow name="Hello9">
+    <http:listener config-ref="Listener-config" doc:id="kiflpq" doc:name="Listener" path="/hello"></http:listener>
+    <logger doc:id="dqgiwm" doc:name="Logger" message="Hello"></logger>
+  </flow>
+  <flow name="Hello10">
+    <http:listener config-ref="Listener-config" doc:id="kiflpq" doc:name="Listener" path="/hello"></http:listener>
+    <logger doc:id="dqgiwm" doc:name="Logger" message="Hello"></logger>
+  </flow>
+  
+  <sub-flow name="hello-sub1">
+    <logger doc:name="hello-sub1" doc:id="xxlohl" message="Hollo sub1"/>
+  </sub-flow>
+  <sub-flow name="hello-sub2">
+    <logger doc:name="hello-sub2" doc:id="xxlohl" message="Hollo sub2"/>
+  </sub-flow>
+  <sub-flow name="hello-sub3">
+    <logger doc:name="hello-sub3" doc:id="xxlohl" message="Hollo sub3"/>
+  </sub-flow>
+  <sub-flow name="hello-sub4">
+    <logger doc:name="hello-sub4" doc:id="xxlohl" message="Hollo sub4"/>
+  </sub-flow>
+  <sub-flow name="hello-sub5">
+    <logger doc:name="hello-sub5" doc:id="xxlohl" message="Hollo sub5"/>
+  </sub-flow>
+
+</mule>

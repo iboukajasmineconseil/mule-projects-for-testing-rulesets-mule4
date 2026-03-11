@@ -1,0 +1,112 @@
+{
+  "folders": [
+    {
+      "path": "fist-app"
+    },
+    {
+      "path": "..\\..\\Users\\ibouk\\api-kit-test-moins"
+    },
+    {
+      "path": "apikit-test-moins"
+    },
+    {
+      "name": "apikit-test-plus",
+      "path": "apikit-test-plus"
+    },
+    {
+      "name": "flow-subflow-moins",
+      "path": "flow-subflow-moins"
+    },
+    {
+      "name": "flow-subflow-plus",
+      "path": "flow-subflow-plus"
+    },
+    {
+      "name": "apikit-test-moins-the-second-propagate-notstartwith-apikit",
+      "path": "apikit-test-moins-the-second-propagate-notstartwith-apikit"
+    },
+    {
+      "name": "apikit-test-moins-specifcation-without-propagate-startwith-apikit",
+      "path": "apikit-test-moins-specifcation-without-propagate-startwith-apikit"
+    },
+    {
+      "name": "properties-config-test-plus",
+      "path": "properties-config-test-plus"
+    },
+    {
+      "name": "properties-config-test-moins",
+      "path": "properties-config-test-moins"
+    },
+    {
+      "name": "properties-config-test-plus-secure",
+      "path": "properties-config-test-plus-secure"
+    },
+    {
+      "name": "properties-config-test-plus-secure-hardcode",
+      "path": "properties-config-test-plus-secure-hardcode"
+    },
+    {
+      "name": "hardcode-test-moins",
+      "path": "hardcode-test-moins"
+    },
+    {
+      "name": "auto-discovery-test-plus",
+      "path": "auto-discovery-test-plus"
+    },
+    {
+      "name": "blank-app",
+      "path": "blank-app"
+    },
+    {
+      "name": "http-status-codes-test-plus",
+      "path": "http-status-codes-test-plus"
+    },
+    {
+      "name": "http-status-codes-test-moins",
+      "path": "http-status-codes-test-moins"
+    },
+    {
+      "name": "dataweave-test-plus-external-dwl",
+      "path": "dataweave-test-plus-external-dwl"
+    },
+    {
+      "path": "dataweave-test-moins-inline"
+    },
+    {
+      "name": "dataweave-test-moins-external-json",
+      "path": "dataweave-test-moins-external-json"
+    },
+    {
+      "name": "dataweave-test-moins-mix-external-and-inline",
+      "path": "dataweave-test-moins-mix-external-and-inline"
+    },
+    {
+      "name": "http-listener-test-plus",
+      "path": "http-listener-test-plus"
+    },
+    {
+      "name": "http-listener-test-moins",
+      "path": "http-listener-test-moins"
+    },
+    {
+      "name": "http-listener-test-moins-with-firsthttps-and-lasthttp",
+      "path": "http-listener-test-moins-with-firsthttps-and-lasthttp"
+    },
+    {
+      "path": "auto-discovery-test-moins-appid-hardcode"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/.DS_Store": true,
+      "**/Thumbs.db": true,
+      ".mule": true
+    },
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "mule.runtime.defaultArguments": "-M-Dmule.forceConsoleLog -M-Dmule.testingMode -M-XX:-UseBiasedLocking -M-Dfile.encoding=UTF-8 -M-XX:+UseG1GC -M-XX:+UseStringDeduplication -M-Dcom.ning.http.client.AsyncHttpClientConfig.useProxyProperties=true -M-Dmule.debugger.test.port=8000 console0 -M-Danypoint.platform.client_id=d562ad9e1ca446fbb935ea1e63ac37b7 -M-Danypoint.platform.client_secret=9d647d9807d641a28E345D1BFAF8076C"
+  },
+  "extensions": {}
+}
