@@ -10,6 +10,9 @@
       <ee:message >
         <ee:set-payload doc:name="Set payload" doc:id="hhddib" resource="clients.dwl"/>
       </ee:message>
+      <ee:variables>
+        <ee:set-variable variableName="NewVariable1" resource="clients.dwl"/>
+      </ee:variables>  
     </ee:transform>
     <ee:transform doc:name="Transform" doc:id="bkyyfy" >
       <ee:message >
@@ -20,6 +23,14 @@
       "Dataweave":"Mix"
     }]]></ee:set-payload>
       </ee:message>
+      <ee:variables>
+        <ee:set-variable variableName="NewVariable1"><![CDATA[%dw 2.0
+output application/java
+---
+{
+  "Dataweave":"Mix"
+}]]></ee:set-variable>
+      </ee:variables>  
     </ee:transform>
   </flow>
 </mule>
